@@ -1,0 +1,46 @@
+body {
+  background-color: #fce5cd;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
+body:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+#birthday {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #ffc107;
+  text-shadow: 2px 2px #f57c00;
+  animation: color-change 3s ease-in-out infinite alternate;
+  font-family: 'Lucida Console';
+  max-width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+#name {
+  font-size: 2.5rem;
+}
+
+@keyframes color-change {
+  from {
+    color: #ffc107;
+  }
+  to {
+    color: #f57c00;
+  }
+}
