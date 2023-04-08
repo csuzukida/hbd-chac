@@ -1,6 +1,7 @@
 # hbd-chac
 
-Fork and make your contribution then open a PR here!
+## Fork and make your contribution then open a PR here!
+### Please remember to pull and merge the latest from main before you make your PR :)
 
 Suggestions:
 - Add a personal comment in the log (or just DM me what you want and I'll add it with your name)
