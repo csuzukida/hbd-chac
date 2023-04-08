@@ -58,3 +58,23 @@ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
     color: #f57c00;
   }
 }
+
+@keyframes fall {
+  from {
+
+  }
+  to {
+    transform: translateY(100vh);
+  }
+}
+.chacta {
+  animation: fall 10s linear forwards;
+  top: 0px;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background-image: url('https://ca.slack-edge.com/T04792R6SQ3-U047N88J3G9-b628ba19f2e0-512');
+  z-index: 100;
+  border-radius: 20px;
+  background-size: contain;
+}
