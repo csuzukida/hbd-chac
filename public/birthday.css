@@ -2,6 +2,8 @@ body {
   background-color: #fce5cd;
   font-family: 'Arial', sans-serif;
   overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100vh;
 }
 
 body:before {
@@ -30,7 +32,7 @@ body:before {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   transform-style: preserve-3d;
   transform-origin: center;
 }
@@ -54,19 +56,20 @@ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   from {
     color: #ffc107;
   }
+
   to {
     color: #f57c00;
   }
 }
 
 @keyframes fall {
-  from {
+  from {}
 
-  }
   to {
     transform: translateY(100vh);
   }
 }
+
 .chacta {
   animation: fall 10s linear forwards;
   top: 0px;
