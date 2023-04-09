@@ -37,7 +37,6 @@ body:before {
   transform-origin: center;
 }
 
-
 .card-container {
   position: fixed;
   display: flex;
@@ -63,7 +62,8 @@ body:before {
 }
 
 @keyframes fall {
-  from {}
+  from {
+  }
 
   to {
     transform: translateY(100vh);
