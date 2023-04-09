@@ -2,8 +2,8 @@ const container = document.querySelector('.card-container');
 const card = document.querySelector('#birthday');
 
 card.addEventListener('mousemove', (e) => {
-  const xAxis = (card.getBoundingClientRect().left + (card.offsetWidth / 2) - e.pageX) / 25;
-  const yAxis = (card.getBoundingClientRect().top + (card.offsetHeight / 2) - e.pageY) / 25;
+  const xAxis = (card.getBoundingClientRect().left + card.offsetWidth / 2 - e.pageX) / 25;
+  const yAxis = (card.getBoundingClientRect().top + card.offsetHeight / 2 - e.pageY) / 25;
   card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 });
 
