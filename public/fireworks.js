@@ -1,8 +1,11 @@
+/* eslint-disable no-use-before-define */
+/* eslint-disable guard-for-in */
+/* eslint-disable no-restricted-syntax */
 const c = document.getElementById('Canvas');
 const ctx = c.getContext('2d');
 
-let cwidth; let
-  cheight;
+let cwidth;
+let cheight;
 const shells = [];
 const pass = [];
 
@@ -28,6 +31,7 @@ const colors = [
 window.onresize = function () {
   reset();
 };
+
 reset();
 function reset() {
   cwidth = window.innerWidth;
@@ -52,7 +56,7 @@ function newShell() {
 function newPass(shell) {
   const pasCount = Math.ceil(shell.size ** 2 * Math.PI);
 
-  for (i = 0; i < pasCount; i++) {
+  for (let i = 0; i < pasCount; i += 1) {
     const pas = {};
     pas.x = shell.x * cwidth;
     pas.y = shell.y * cheight;
@@ -76,7 +80,7 @@ let lastRun = 0;
 Run();
 function Run() {
   let dt = 1;
-  if (lastRun != 0) {
+  if (lastRun !== 0) {
     dt = Math.min(50, performance.now() - lastRun);
   }
   lastRun = performance.now();
@@ -89,6 +93,7 @@ function Run() {
     newShell();
   }
 
+  
   for (const ix in shells) {
     const shell = shells[ix];
 
