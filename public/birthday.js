@@ -1,4 +1,5 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js';
+import { storage } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-storage.js';
 import dotenv from 'dotenv';
 
 dotenv.config();
