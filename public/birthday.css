@@ -89,3 +89,32 @@ canvas {
   height: 100%;
   z-index: -1;
 }
+
+.cssbounce {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    bottom: 0;
+  }
+
+  .cssbounce h1 {
+    position: absolute;
+    bottom: 0;
+    color: rgb(120, 18, 127);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: left;
+    animation: cssbounce 2s linear infinite alternate;
+  }
+
+  @keyframes cssbounce {
+    0% {
+      transform: translateY(70%);
+    }
+
+    100% {
+      transform: translateY(0%);
+    }
+  }
